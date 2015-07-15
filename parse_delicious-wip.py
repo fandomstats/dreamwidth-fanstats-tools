@@ -60,7 +60,6 @@ for n,item in enumerate(items):
       'tags':tags,
       }
     promptlist.append(prompt.copy())
-    print prompt['tags']
     prompt['tags'] = ",".join(tags)
     prompt['tags'] = prompt['tags'].encode('utf-8')
     csvwriter.writerow(prompt)    
